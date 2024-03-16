@@ -1,0 +1,3 @@
+select r.Id, r.Name, r.Description, rt.Name as 'Type'
+from Recipes as r join RecipeTypes as rt
+on r.RecipeTypeId = rt.Id
